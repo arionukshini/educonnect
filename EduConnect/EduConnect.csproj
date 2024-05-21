@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D8DC4B1-33D4-42AB-937D-E8B899E77568}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EduConnect</RootNamespace>
+    <AssemblyName>EduConnect</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net45\Guna.UI2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Siticone.Desktop.UI.2.1.1\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="educonnectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educonnectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educonnectDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educonnectDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educonnectDataSetGrades.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educonnectDataSetGrades.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educonnectDataSetProf1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educonnectDataSetProf1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educonnectDataSetProf2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educonnectDataSetProf2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educonnectDataSetSchedule.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educonnectDataSetSchedule.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educonnectDataSetSchedule1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educonnectDataSetSchedule1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Grades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grades.Designer.cs">
+      <DependentUpon>Grades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleProfessor.Designer.cs">
+      <DependentUpon>ScheduleProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersProfessor.Designer.cs">
+      <DependentUpon>UsersProfessor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grades.resx">
+      <DependentUpon>Grades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleProfessor.resx">
+      <DependentUpon>ScheduleProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersProfessor.resx">
+      <DependentUpon>UsersProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="educonnectDataSet.xsc">
+      <DependentUpon>educonnectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educonnectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educonnectDataSet.xss">
+      <DependentUpon>educonnectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSet2.xsc">
+      <DependentUpon>educonnectDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educonnectDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educonnectDataSet2.xss">
+      <DependentUpon>educonnectDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSetGrades.xsc">
+      <DependentUpon>educonnectDataSetGrades.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSetGrades.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educonnectDataSetGrades.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educonnectDataSetGrades.xss">
+      <DependentUpon>educonnectDataSetGrades.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSetProf1.xsc">
+      <DependentUpon>educonnectDataSetProf1.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSetProf1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educonnectDataSetProf1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educonnectDataSetProf1.xss">
+      <DependentUpon>educonnectDataSetProf1.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSetProf2.xsc">
+      <DependentUpon>educonnectDataSetProf2.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSetProf2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educonnectDataSetProf2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educonnectDataSetProf2.xss">
+      <DependentUpon>educonnectDataSetProf2.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSetSchedule.xsc">
+      <DependentUpon>educonnectDataSetSchedule.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSetSchedule.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educonnectDataSetSchedule.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educonnectDataSetSchedule.xss">
+      <DependentUpon>educonnectDataSetSchedule.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSetSchedule1.xsc">
+      <DependentUpon>educonnectDataSetSchedule1.xsd</DependentUpon>
+    </None>
+    <None Include="educonnectDataSetSchedule1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educonnectDataSetSchedule1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educonnectDataSetSchedule1.xss">
+      <DependentUpon>educonnectDataSetSchedule1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
